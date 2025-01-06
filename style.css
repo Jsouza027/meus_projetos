@@ -1,0 +1,122 @@
+:root {
+    --Krona: 'Krona One', sans-serif;
+    --pri: #85A98F;
+    --sec: #5A6C57;
+    --terc: #525B44;
+}
+
+*{
+    content: 0rem;
+    padding: 0rem;
+    border: 0rem;
+    margin: 0.32rem;
+}
+body{
+    background-color: var(--pri);
+    color: var(--sec);
+    height: 100vh;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao-titulo{
+    font-size: 2.2rem;
+}
+.negrito{
+    color: var(--terc);
+}
+.apresentacao-subtitulo{
+    font-size: 1.56rem;
+}
+.apresentacao-texto{
+    font-size: 1.56rem;
+    padding: 0rem;
+}
+.apresentacao-link{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    width: 50%;
+    height: 1.25rem 0.06rem;
+    padding: 0.66rem;
+    border-radius: 1rem;
+    display: flex;
+    border: 0.125rem dashed var(--terc);
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    gap: 1rem;
+}
+.apresentacao-link:hover{
+    background-color: var(--sec);
+    border: 0,25rem solid var(--terc);
+    color: red;
+}
+a{
+    color: var(--terc);
+    text-decoration: none;
+}
+.apresentacao{
+width: 50%;
+gap: 5,13rem;
+}
+header{
+    color: var(--sec);
+    height: 2,5rem;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+div{
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: 400;
+    align-items: center;
+}
+footer{
+    color: var(--pri);
+    background-color: var(--terc);
+    padding: 1.625rem;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 800;
+}
+.cabecalho-menu-link{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1,5rem;
+}
+.cabecalho{
+    padding: 1% 1% 1% 1%;
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 5rem;
+}
+.trogon{
+    border: 0.6rem solid var(--terc);
+    width: 25%;
+}
+.trogon-2{
+    border: 0.6rem solid var(--terc);
+    width: 25%;
+}
+
+@media (max-width: 870px){
+    .cabecalho{
+        padding: 10% 1 1 20%;
+    }
+    .cabecalho-menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 2%;
+        width: auto;
+    }
+}
